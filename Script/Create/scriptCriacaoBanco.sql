@@ -65,17 +65,17 @@ CREATE TABLE IF NOT EXISTS `sistemasDeNotas`.`Notas` (
   `Id` VARCHAR(45) NOT NULL,
   `Nota` DOUBLE NOT NULL,
   `Aluno_Id` VARCHAR(45) NOT NULL,
-  `CursoXDiciplina_Id` VARCHAR(45) NOT NULL,
+  `Diciplinas_Id` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`Id`),
   INDEX `fk_Notas_Aluno1_idx` (`Aluno_Id` ASC) VISIBLE,
-  INDEX `fk_Notas_CursoXDiciplina1_idx` (`CursoXDiciplina_Id` ASC) VISIBLE,
+  INDEX `fk_Notas_Diciplinas1_idx` (`Diciplinas_Id` ASC) VISIBLE,
   CONSTRAINT `fk_Notas_Aluno1`
     FOREIGN KEY (`Aluno_Id`)
     REFERENCES `sistemasDeNotas`.`Aluno` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Notas_CursoXDiciplina1`
-    FOREIGN KEY (`CursoXDiciplina_Id`)
-    REFERENCES `sistemasDeNotas`.`CursoXDiciplina` (`Id`)
+ CONSTRAINT `fk_Notas_Diciplinas1`
+    FOREIGN KEY (`Diciplinas_Id`)
+    REFERENCES `sistemasDeNotas`.`Diciplinas` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
