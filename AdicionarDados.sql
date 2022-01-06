@@ -11,7 +11,7 @@ INSERT INTO cursos(Id,Nome) VALUE(4,'Automação Industrial');
 INSERT INTO alunos(Matricula,Nome,Id_curso) VALUE(2018321098,'Iago',1);
 INSERT INTO alunos(Matricula,Nome,Id_curso) VALUE(2021231202,'Gabriela',2);
 INSERT INTO alunos(Matricula,Nome,Id_curso) VALUE(2193109187,'Jair',3);
-INSERT INTO alunos(Matricula,Nome,Id_curso) VALUE(2012786310,'Cristina',3);
+INSERT INTO alunos(Matricula,Nome,Id_curso) VALUE(2012786310,'Cristina',4);
 
 -- Inserindo as disciplinas
 INSERT INTO disciplinas(Id,	Id_curso,Nome) VALUE(1,1,'Design de Produtos');
@@ -41,3 +41,6 @@ INSERT INTO notas(Id,Matricula_Aluno,Id_disciplina,Nota) VALUE(10,2012786310,4,7
 INSERT INTO notas(Id,Matricula_Aluno,Id_disciplina,Nota) VALUE(11,2012786310,8,93);
 INSERT INTO notas(Id,Matricula_Aluno,Id_disciplina,Nota) VALUE(12,2012786310,11,93);
 
+SELECT a.Matricula,a.Nome,d.Nome AS Disciplina,n.Nota FROM alunos a
+JOIN notas n ON n.Matricula_Aluno = a.Matricula
+JOIN disciplinas d ON n.Id_disciplina = d.Id
