@@ -1,5 +1,70 @@
-matricula, nome, curso, disciplina_1, nota_1, disciplina_2, nota_2, disciplina_3, nota_3, disciplina_4, nota_4
-2018321098, Iago, Design, Design de Produtos, 100, Desenvolvimento de Produtos, 100, Marketing, 100
-2021231202, Gabriela, Desenvolvimento de sistemas, Desenvolvimento de Aplicacoes Web, 82, Programacao Orientada a Objetos, 93, Sistemas operacionais, 100, Empreendedorismo, 100
-2193109187, Jair, EletrÃ´nica, Circuitos Digitais, 85, Sistemas Embarcados, 100 
-2012786310, Cristina, AutomaÃ§Ã£o Industrial, DomÃ³tica e RobÃ³tica, 74, Empreendedorismo, 93, EducaÃ§Ã£o FÃ­sica, 95
+1º NORMA DE NORMALIZAÇÃO;;;;;;;;;;
+;;;;;;;;;;
+TABELA ALUNOS;;;;;;;;;;
+Id;Matricula;Nome;Id_Curso;Nome_Curso;;;;;;
+0;2018321098;Iago;0;Design;;;;;;
+1;2021231202;Gabriela;1;Desenvolvimento de sistemas;;;;;;
+2;2193109187;Jair;2;Eletrônica ;;;;;;
+3;2012786310;Cristina;3;Automação Industrial;;;;;;
+TABELA DISCIPLINAS;;;;TABELA NOTAS;;;;;;
+Id;Nome;Id_Curso;;Id;Id_Aluno;Id_Disciplina;Nota;;;
+0;Design de Produtos;0;;0;0;0;100;;;
+1;Desenvolvimento de Aplicacoes Web;1;;1;0;4;100;;;
+2;Circuitos Digitais ;2;;2;0;8;100;;;
+3;Domótica e Robótica;3;;3;1;1;82;;;
+4;Desenvolvimento de Produtos;0;;4;1;5;93;;;
+5;Programacao Orientada a Objetos;1;;5;1;9;100;;;
+6;Sistemas Embarcados ;2;;6;1;7;100;;;
+7;Empreendendorismo;3;;7;2;2;85;;;
+8;Marketing;0;;8;2;6;100;;;
+9;Sistemas operacionais;1;;9;3;3;74;;;
+10;Educação Fí­sica;3;;10;3;11;93;;;
+11;Empreendendorismo;1;;11;3;10;95;;;
+;;;;;;;;;;
+2º NORMA DE NORMALIZAÇÃO;;;;;;;;;;
+;;;;;;;;;;
+TABELA ALUNOS;;;;;;TABELA CURSOS;;;;
+Id;Matricula;Nome;Id_Curso;;;Id;Nome;;;
+0;2018321098;Iago;0;;;0;Design;;;
+1;2021231202;Gabriela;1;;;1;Desenvolvimento de sistemas;;;
+2;2193109187;Jair;2;;;2;Eletrônica ;;;
+3;2012786310;Cristina;3;;;3;Automação Industrial;;;
+TABELA DISCIPLINAS;;;;TABELA NOTAS;;;;;;
+Id;Nome;Id_Curso;;Id;Id_Aluno;Id_Disciplina;Nota;;;
+0;Design de Produtos;0;;0;0;0;100;;;
+1;Desenvolvimento de Aplicacoes Web;1;;1;0;4;100;;;
+2;Circuitos Digitais ;2;;2;0;8;100;;;
+3;Domótica e Robótica;3;;3;1;1;82;;;
+4;Desenvolvimento de Produtos;0;;4;1;5;93;;;
+5;Programacao Orientada a Objetos;1;;5;1;9;100;;;
+6;Sistemas Embarcados ;2;;6;1;7;100;;;
+7;Empreendendorismo;3;;7;2;2;85;;;
+8;Marketing;0;;8;2;6;100;;;
+9;Sistemas operacionais;1;;9;3;3;74;;;
+10;Educação Fí­sica;3;;10;3;11;93;;;
+11;Empreendendorismo;1;;11;3;10;95;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+3º NORMA DE NORMALIZAÇÃO;;;;;;;;;;
+;;;;;;;;;;
+TABELA ALUNOS;;;;;;TABELA CURSOS;;TABELA DISCIPLINA - CURSO;;
+Id;Matricula;Nome;Id_Curso;;;Id;Nome;Id;Id_Curso;Id_Disciplina
+0;2018321098;Iago;0;;;0;Design;0;0;0
+1;2021231202;Gabriela;1;;;1;Desenvolvimento de sistemas;1;0;4
+2;2193109187;Jair;2;;;2;Eletrônica ;2;0;8
+3;2012786310;Cristina;3;;;3;Automação Industrial;3;1;1
+TABELA DISCIPLINAS;;;;TABELA NOTAS;;;;4;1;5
+Id;Nome;;;Id;Id_Aluno;Id_Disciplina;Nota;5;1;9
+0;Design de Produtos;;;0;0;0;100;6;1;7
+1;Desenvolvimento de Aplicacoes Web;;;1;0;4;100;7;2;2
+2;Circuitos Digitais ;;;2;0;8;100;8;2;6
+3;Domótica e Robótica;;;3;1;1;82;9;3;3
+4;Desenvolvimento de Produtos;;;4;1;5;93;10;3;7
+5;Programacao Orientada a Objetos;;;5;1;9;100;11;3;10
+6;Sistemas Embarcados ;;;6;1;7;100;;;
+7;Empreendendorismo;;;7;2;2;85;;;
+8;Marketing;;;8;2;6;100;;;
+9;Sistemas operacionais;;;9;3;3;74;;;
+10;Educação Fí­sica;;;10;3;7;93;;;
+;;;;11;3;10;95;;;
